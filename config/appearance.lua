@@ -13,32 +13,33 @@ return {
   -- colors = colors,
   -- color_scheme = "Gruvbox dark, medium (base16)",
   -- color_scheme = 'Gruvbox Dark (Gogh)',
-  color_scheme = 'GruvboxDark',
+  -- color_scheme = 'GruvboxDark',
   -- color_scheme = 'Tango (base16)',
   -- color_scheme = 'Solarized Darcula',
   -- color_scheme = 'Sonokai (Gogh)',
-  -- color_scheme = 'OneHalfDark',
+  color_scheme = 'OneHalfDark',
+  -- color_scheme = 'Monokai Pro (Gogh)',
 
 
   -- background
-  window_background_opacity = 1.00,
-  win32_system_backdrop = "Acrylic",
-  window_background_gradient = {
-    colors = { "#1D261B", "#261A25" },
-    -- Specifices a Linear gradient starting in the top left corner.
-    orientation = { Linear = { angle = -45.0 } },
-  },
-  background = {
-    {
-      source = { File = wezterm.config_dir .. "/backdrops/space.jpg" },
-    },
-    {
-      source = { Color = "#1A1B26" },
-      height = "100%",
-      width = "100%",
-      opacity = 0.95,
-    },
-  },
+  -- window_background_opacity = 1.00,
+  -- win32_system_backdrop = "Acrylic",
+  -- window_background_gradient = {
+  --   colors = { "#1D261B", "#261A25" },
+  --   -- Specifices a Linear gradient starting in the top left corner.
+  --   orientation = { Linear = { angle = -45.0 } },
+  -- },
+  -- background = {
+  --   {
+  --     source = { File = wezterm.config_dir .. "/backdrops/space.jpg" },
+  --   },
+  --   {
+  --     source = { Color = "#1A1B26" },
+  --     height = "100%",
+  --     width = "100%",
+  --     opacity = 0.95,
+  --   },
+  -- },
 
   -- scrollbar
   enable_scroll_bar = true,
