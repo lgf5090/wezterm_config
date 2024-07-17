@@ -1,4 +1,5 @@
 local wezterm = require("wezterm")
+local platform = require("utils.platform")()
 
 -- Inspired by https://github.com/wez/wezterm/discussions/628#discussioncomment-1874614
 
@@ -56,10 +57,16 @@ M.set_title = function(process_name, static_title, active_title, max_width, inse
     title = "  " .. process_name .. " ~ " .. " "
   elseif process_name == "nu" then
     title = "  " .. process_name .. " ~ " .. " "
-  elseif process_name == "bash" then
+  elseif process_name == "bash" and platform.is_win then
     title = "󰊢  git-bash" .. " ~ " .. " "
   elseif process_name == "wslhost" then
     title = "  " .. process_name .. " ~ " .. " "
+  elseif process_name == "bash" then
+    title = "󱆃  " .. process_name .. " ~ " .. " "
+  elseif process_name == "zsh" then
+    title = "  " .. process_name .. " ~ " .. " "
+  elseif process_name == "fish" then
+    title = "  " .. process_name .. " ~ " .. " "
   elseif process_name == "node" or process_name == "deno" or process_name == "bun" then
     title = "  " .. process_name .. " ~ " .. " "
   elseif process_name == "python" or process_name == "ipython" then
