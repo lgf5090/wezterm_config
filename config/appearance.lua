@@ -17,8 +17,8 @@ return {
   -- color_scheme = 'Tango (base16)',
   -- color_scheme = 'Solarized Darcula',
   -- color_scheme = 'Sonokai (Gogh)',
-  color_scheme = 'OneHalfDark',
-  -- color_scheme = 'Monokai Pro (Gogh)',
+  -- color_scheme = 'OneHalfDark',
+  color_scheme = 'Monokai Pro (Gogh)',
 
 
   -- background
