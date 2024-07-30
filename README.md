@@ -1,3 +1,21 @@
+# 如何使用
+
+
+```POWERSHELL
+$configPath = Join-Path -Path $env:USERPROFILE -ChildPath ".config"
+$weztermPath = Join-Path -Path $env:USERPROFILE -ChildPath ".config/wezterm"
+$weztermBakPath = Join-Path -Path $env:USERPROFILE -ChildPath ".config/wezterm.bak"
+
+New-Item -ItemType Directory -Path $configPath -Force
+
+# Remove-Item -Path $weztermPath -Recurse -Force
+Move-Item -Path $weztermPath -Destination $weztermBakPath -Force -ErrorAction SilentlyContinue
+
+git clone git@github.com:lgf5090/wezterm_config.git $weztermPath
+```
+
+
+
 # 我的WezTerm配置
 
 **截图一**
